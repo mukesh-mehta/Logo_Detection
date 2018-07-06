@@ -1,9 +1,6 @@
-from keras.preprocessing.sequence import pad_sequences
 from keras.layers import Dense, Input, Dropout, Activation, Conv2D, MaxPooling2D, Lambda, Flatten, GlobalAveragePooling2D
 from keras.layers.merge import concatenate
 from keras.models import Model
-from keras.layers.normalization import BatchNormalization
-from keras.callbacks import EarlyStopping, ModelCheckpoint,ReduceLROnPlateau
 from keras.optimizers import RMSprop, nadam, adam
 from keras.applications.vgg16 import VGG16
 from keras.applications.mobilenet import MobileNet
